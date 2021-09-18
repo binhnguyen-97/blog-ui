@@ -6,8 +6,8 @@ import { IArticle } from '../../interfaces/article';
 
 import nameToUrl from '../../services/utils/nameToUrl';
 
-import lifeDefaultImageSrc from "../../assets/images/life-default-thumbnail.svg";
-import techDefaultImageSrc from "../../assets/images/tech-default-thumbnail.svg";
+import lifeDefaultImageSrc from "../../assets/images/life-default-thumbnail.png";
+import techDefaultImageSrc from "../../assets/images/tech-default-thumbnail.png";
 
 import styles from './ArticleItem.module.scss'
 

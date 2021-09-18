@@ -4,8 +4,13 @@
 .HighlightArticle {
   position: relative;
 
-  .Banner {
-    z-index: -1;
+  .BannerWrapper {
+    & > * {
+      width: 100%;
+    }
+    .Banner {
+      z-index: -1;
+    }
   }
 
   .HighlightItem {

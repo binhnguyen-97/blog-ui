@@ -6,8 +6,8 @@ import { format } from 'date-fns';
 import { IArticle } from '../../interfaces/article';
 import nameToUrl from '../../services/utils/nameToUrl';
 
-import lifeDefaultImageSrc from "../../assets/images/life-default-banner.svg";
-import techDefaultImageSrc from "../../assets/images/tech-default-banner.svg";
+import lifeDefaultImageSrc from "../../assets/images/life-default-banner.png";
+import techDefaultImageSrc from "../../assets/images/tech-default-banner.png";
 
 import styles from './HighlightArticle.module.scss';
 
@@ -38,7 +38,9 @@ const HighlightArticle = ({
 
   return (
     <div className={styles.HighlightArticle}>
-      <Image src={bannerImageSrc} alt="" className={styles.Banner} />
+      <div className={styles.BannerWrapper}>
+        <Image src={bannerImageSrc} alt="" className={styles.Banner} />
+      </div>
       <div className={styles.HighlightItem}>
         <div className={styles.HighlightItemCategories}>
           <Link href="/">Đời sống</Link>
