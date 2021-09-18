@@ -1,0 +1,17 @@
+.ArticleListing {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content;
+  grid-gap: 2rem;
+
+  @media screen and (min-width: 480px) {
+    padding: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content;
+  }
+
+  @media screen and (min-width: 769px) {
+    padding: 0 1.5rem 0 0;
+  }
+}

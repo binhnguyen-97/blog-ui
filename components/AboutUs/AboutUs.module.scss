@@ -1,0 +1,25 @@
+@use '../../styles/commons' as *;
+
+.Container {
+  .HeaderLine {
+    @extend %button_text_default;
+    @extend %more_space_text;
+
+    padding: 0.7rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .Image {
+    @extend %flex_center;
+    margin: 1rem auto;
+  }
+
+  .Description {
+    white-space: pre-line;
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+}

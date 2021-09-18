@@ -1,0 +1,5 @@
+export enum PAGES {
+  HOME_PAGE,
+  CATEGORY_PAGE,
+  SEARCH_PAGE,
+}

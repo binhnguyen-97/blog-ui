@@ -1,0 +1,85 @@
+@use '../../styles/variables' as *;
+@use '../../styles/commons' as *;
+
+.Header {
+  width: 100vw;
+  font-size: 12px;
+  @extend %bottom_box_shadow;
+
+  .Nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.7rem 1rem 0.7rem 0;
+
+    max-width: 1440px;
+
+    @media screen and (min-width: 769px) {
+      padding: 0.7rem 1rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 70%;
+      padding: 0.7rem 0;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    .Navigator {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      &Item {
+        margin-left: 1.5rem;
+        text-transform: uppercase;
+        word-spacing: 0.1em;
+        letter-spacing: 0.05em;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        & > a {
+          color: $true_black_color;
+          text-decoration: none;
+          &:hover {
+            color: $red_color;
+          }
+        }
+
+        &Active {
+          & > a {
+            color: $red_color;
+          }
+        }
+      }
+    }
+    .SearchBox {
+      flex-basis: 30%;
+      position: relative;
+      input {
+        @extend %border_gray;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        padding: 0.5rem 2rem 0.5rem 1rem;
+        border-radius: 15px;
+        margin-left: auto;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 1em;
+        z-index: 2;
+        width: 1rem;
+        height: 1rem;
+        background-image: url('../../assets/icons/searchIcon.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

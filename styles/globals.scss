@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+@import './carousel';
+
+html,
+body {
+  font-family: $playfair_font;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: $text_color;
+}

@@ -1,0 +1,16 @@
+@use '../../styles/commons' as *;
+
+.Footer {
+  @extend %top_box_shadow;
+
+  padding: 2rem 0 1rem;
+  font-size: 0.9rem;
+  font-style: italic;
+
+  margin-top: auto;
+  text-align: center;
+
+  a {
+    @extend %link;
+  }
+}
