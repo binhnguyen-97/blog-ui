@@ -37,36 +37,36 @@ const HomePage = ({
       <Head>
         <title>BiDu&apos;s Blog</title>
         <meta
-          name="description"
+          property="description"
           content="BiDu blog là nơi chia sẻ những bài viết xoay quanh chủ đề về cuộc sống và công nghệ. Các bài viết đều dựa theo những trải nghiệm và nghiên cứu thức tế của bọn mình."
         />
         <meta
-          name="image"
-          content={`${process.env.BASE_URL}/slogan-logo.svg`}
+          property="image"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}/slogan-logo.svg`}
         />
         <meta
-          name="og:description"
-          property="BiDu blog là nơi chia sẻ những bài viết xoay quanh chủ đề về cuộc sống và công nghệ. Các bài viết đều dựa theo những trải nghiệm và nghiên cứu thức tế của bọn mình."
+          property="og:description"
+          content="BiDu blog là nơi chia sẻ những bài viết xoay quanh chủ đề về cuộc sống và công nghệ. Các bài viết đều dựa theo những trải nghiệm và nghiên cứu thức tế của bọn mình."
         />
         <meta
-          name="og:title"
-          property="BiDu&apos;s Blog - Life and Technology"
+          property="og:title"
+          content="BiDu&apos;s Blog - Life and Technology"
         />
         <meta
-          name="og:image"
-          property={`${process.env.BASE_URL}/slogan-logo.svg`}
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}/slogan-logo.svg`}
         />
         <meta
-          name="og:url"
-          property={process.env.NEXT_PUBLIC_BASE_URL}
+          property="og:url"
+          content={process.env.NEXT_PUBLIC_BASE_URL}
         />
         <meta
-          name="og:type"
-          property="article/listing"
+          property="og:type"
+          content="article/listing"
         />
         <meta
-          name="fb:app_id"
-          property="248079427097756"
+          property="fb:app_id"
+          content="248079427097756"
         />
       </Head>
       <Home articleList={articleList} highlightArticles={highlightArticles} />
