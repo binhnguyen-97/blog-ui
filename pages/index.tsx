@@ -37,11 +37,11 @@ const HomePage = ({
       <Head>
         <title>BiDu&apos;s Blog</title>
         <meta
-          property="description"
+          name="description"
           content="BiDu blog là nơi chia sẻ những bài viết xoay quanh chủ đề về cuộc sống và công nghệ. Các bài viết đều dựa theo những trải nghiệm và nghiên cứu thức tế của bọn mình."
         />
         <meta
-          property="image"
+          name="image"
           content={`${process.env.NEXT_PUBLIC_BASE_URL}/blog-logo.png`}
         />
         <meta
