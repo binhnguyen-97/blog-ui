@@ -42,7 +42,7 @@ const HomePage = ({
         />
         <meta
           property="image"
-          content={`${process.env.NEXT_PUBLIC_BASE_URL}/slogan-logo.svg`}
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}/blog-logo.png`}
         />
         <meta
           property="og:description"
@@ -54,7 +54,7 @@ const HomePage = ({
         />
         <meta
           property="og:image"
-          content={`${process.env.NEXT_PUBLIC_BASE_URL}/slogan-logo.svg`}
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}/blog-logo.png`}
         />
         <meta
           property="og:url"
@@ -62,7 +62,7 @@ const HomePage = ({
         />
         <meta
           property="og:type"
-          content="article/listing"
+          content="website"
         />
         <meta
           property="fb:app_id"
